@@ -37,7 +37,7 @@
     --border: var(--cyber-line);
     --input: var(--cyber-dark-2);
     --ring: var(--cyber-red-accent);
-    --radius: 0.25rem;
+    --radius: 0.75rem;
   }
 }
 

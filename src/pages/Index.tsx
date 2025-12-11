@@ -27,9 +27,9 @@ const Index = () => {
       </div>
 
       <div className="grid gap-6 mb-12">
-        <div className="p-6 bg-[rgb(var(--cyber-dark-2))] border border-[rgb(var(--cyber-line))] hover:border-[rgb(var(--cyber-red-accent))] transition-all duration-300 hover:neon-border group">
+        <div className="p-6 bg-[rgb(var(--cyber-dark-2))] border border-[rgb(var(--cyber-line))] hover:border-[rgb(var(--cyber-red-accent))] transition-all duration-300 hover:neon-border group rounded-xl">
           <div className="flex items-start gap-4">
-            <div className="p-3 bg-[rgb(var(--cyber-red-dark))] rounded group-hover:animate-glow-pulse">
+            <div className="p-3 bg-[rgb(var(--cyber-red-dark))] rounded-xl group-hover:animate-glow-pulse">
               <Icon name="Shield" className="w-6 h-6 text-[rgb(var(--cyber-red-bright))]" />
             </div>
             <div>
@@ -43,9 +43,9 @@ const Index = () => {
           </div>
         </div>
 
-        <div className="p-6 bg-[rgb(var(--cyber-dark-2))] border border-[rgb(var(--cyber-line))] hover:border-[rgb(var(--cyber-red-accent))] transition-all duration-300 hover:neon-border group">
+        <div className="p-6 bg-[rgb(var(--cyber-dark-2))] border border-[rgb(var(--cyber-line))] hover:border-[rgb(var(--cyber-red-accent))] transition-all duration-300 hover:neon-border group rounded-xl">
           <div className="flex items-start gap-4">
-            <div className="p-3 bg-[rgb(var(--cyber-red-dark))] rounded group-hover:animate-glow-pulse">
+            <div className="p-3 bg-[rgb(var(--cyber-red-dark))] rounded-xl group-hover:animate-glow-pulse">
               <Icon name="Lock" className="w-6 h-6 text-[rgb(var(--cyber-red-bright))]" />
             </div>
             <div>
@@ -59,9 +59,9 @@ const Index = () => {
           </div>
         </div>
 
-        <div className="p-6 bg-[rgb(var(--cyber-dark-2))] border border-[rgb(var(--cyber-line))] hover:border-[rgb(var(--cyber-red-accent))] transition-all duration-300 hover:neon-border group">
+        <div className="p-6 bg-[rgb(var(--cyber-dark-2))] border border-[rgb(var(--cyber-line))] hover:border-[rgb(var(--cyber-red-accent))] transition-all duration-300 hover:neon-border group rounded-xl">
           <div className="flex items-start gap-4">
-            <div className="p-3 bg-[rgb(var(--cyber-red-dark))] rounded group-hover:animate-glow-pulse">
+            <div className="p-3 bg-[rgb(var(--cyber-red-dark))] rounded-xl group-hover:animate-glow-pulse">
               <Icon name="Fingerprint" className="w-6 h-6 text-[rgb(var(--cyber-red-bright))]" />
             </div>
             <div>
@@ -78,7 +78,7 @@ const Index = () => {
 
       <Button
         onClick={() => setScreen('login')}
-        className="w-full h-14 text-lg font-bold bg-[rgb(var(--cyber-red-accent))] hover:bg-[rgb(var(--cyber-red-bright))] text-[rgb(var(--cyber-text))] border-2 border-[rgb(var(--cyber-red-bright))] neon-border transition-all duration-300"
+        className="w-full h-14 text-lg font-bold bg-[rgb(var(--cyber-red-accent))] hover:bg-[rgb(var(--cyber-red-bright))] text-[rgb(var(--cyber-text))] border-2 border-[rgb(var(--cyber-red-bright))] neon-border transition-all duration-300 rounded-xl"
       >
         ВОЙТИ В СИСТЕМУ
       </Button>
@@ -90,7 +90,7 @@ const Index = () => {
       <div className="flex items-center gap-3 mb-8">
         <button
           onClick={() => setScreen('intro')}
-          className="p-2 hover:bg-[rgb(var(--cyber-dark-2))] rounded transition-colors"
+          className="p-2 hover:bg-[rgb(var(--cyber-dark-2))] rounded-lg transition-colors"
         >
           <Icon name="ChevronLeft" className="w-6 h-6 text-[rgb(var(--cyber-red-accent))]" />
         </button>
@@ -106,7 +106,7 @@ const Index = () => {
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="h-12 bg-[rgb(var(--cyber-dark-2))] border-[rgb(var(--cyber-line))] focus:border-[rgb(var(--cyber-red-accent))] text-[rgb(var(--cyber-text))] transition-all duration-300"
+            className="h-12 bg-[rgb(var(--cyber-dark-2))] border-[rgb(var(--cyber-line))] focus:border-[rgb(var(--cyber-red-accent))] text-[rgb(var(--cyber-text))] transition-all duration-300 rounded-lg"
             placeholder="user@cyberauth.net"
           />
         </div>
@@ -119,7 +119,7 @@ const Index = () => {
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="h-12 bg-[rgb(var(--cyber-dark-2))] border-[rgb(var(--cyber-line))] focus:border-[rgb(var(--cyber-red-accent))] text-[rgb(var(--cyber-text))] transition-all duration-300"
+            className="h-12 bg-[rgb(var(--cyber-dark-2))] border-[rgb(var(--cyber-line))] focus:border-[rgb(var(--cyber-red-accent))] text-[rgb(var(--cyber-text))] transition-all duration-300 rounded-lg"
             placeholder="••••••••"
           />
         </div>
@@ -134,7 +134,7 @@ const Index = () => {
 
       <Button
         onClick={() => setScreen('2fa')}
-        className="w-full h-14 text-lg font-bold bg-[rgb(var(--cyber-red-accent))] hover:bg-[rgb(var(--cyber-red-bright))] text-[rgb(var(--cyber-text))] border-2 border-[rgb(var(--cyber-red-bright))] neon-border transition-all duration-300 mb-6"
+        className="w-full h-14 text-lg font-bold bg-[rgb(var(--cyber-red-accent))] hover:bg-[rgb(var(--cyber-red-bright))] text-[rgb(var(--cyber-text))] border-2 border-[rgb(var(--cyber-red-bright))] neon-border transition-all duration-300 mb-6 rounded-xl"
       >
         ПРОДОЛЖИТЬ
       </Button>
@@ -156,7 +156,7 @@ const Index = () => {
       <div className="flex items-center gap-3 mb-8">
         <button
           onClick={() => setScreen('intro')}
-          className="p-2 hover:bg-[rgb(var(--cyber-dark-2))] rounded transition-colors"
+          className="p-2 hover:bg-[rgb(var(--cyber-dark-2))] rounded-lg transition-colors"
         >
           <Icon name="ChevronLeft" className="w-6 h-6 text-[rgb(var(--cyber-red-accent))]" />
         </button>
@@ -170,7 +170,7 @@ const Index = () => {
           </label>
           <Input
             type="text"
-            className="h-12 bg-[rgb(var(--cyber-dark-2))] border-[rgb(var(--cyber-line))] focus:border-[rgb(var(--cyber-red-accent))] text-[rgb(var(--cyber-text))] transition-all duration-300"
+            className="h-12 bg-[rgb(var(--cyber-dark-2))] border-[rgb(var(--cyber-line))] focus:border-[rgb(var(--cyber-red-accent))] text-[rgb(var(--cyber-text))] transition-all duration-300 rounded-lg"
             placeholder="Иван Иванов"
           />
         </div>
@@ -183,7 +183,7 @@ const Index = () => {
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="h-12 bg-[rgb(var(--cyber-dark-2))] border-[rgb(var(--cyber-line))] focus:border-[rgb(var(--cyber-red-accent))] text-[rgb(var(--cyber-text))] transition-all duration-300"
+            className="h-12 bg-[rgb(var(--cyber-dark-2))] border-[rgb(var(--cyber-line))] focus:border-[rgb(var(--cyber-red-accent))] text-[rgb(var(--cyber-text))] transition-all duration-300 rounded-lg"
             placeholder="user@cyberauth.net"
           />
         </div>
@@ -196,7 +196,7 @@ const Index = () => {
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="h-12 bg-[rgb(var(--cyber-dark-2))] border-[rgb(var(--cyber-line))] focus:border-[rgb(var(--cyber-red-accent))] text-[rgb(var(--cyber-text))] transition-all duration-300"
+            className="h-12 bg-[rgb(var(--cyber-dark-2))] border-[rgb(var(--cyber-line))] focus:border-[rgb(var(--cyber-red-accent))] text-[rgb(var(--cyber-text))] transition-all duration-300 rounded-lg"
             placeholder="••••••••"
           />
         </div>
@@ -207,7 +207,7 @@ const Index = () => {
           </label>
           <Input
             type="password"
-            className="h-12 bg-[rgb(var(--cyber-dark-2))] border-[rgb(var(--cyber-line))] focus:border-[rgb(var(--cyber-red-accent))] text-[rgb(var(--cyber-text))] transition-all duration-300"
+            className="h-12 bg-[rgb(var(--cyber-dark-2))] border-[rgb(var(--cyber-line))] focus:border-[rgb(var(--cyber-red-accent))] text-[rgb(var(--cyber-text))] transition-all duration-300 rounded-lg"
             placeholder="••••••••"
           />
         </div>
@@ -215,7 +215,7 @@ const Index = () => {
 
       <Button
         onClick={() => setScreen('verify')}
-        className="w-full h-14 text-lg font-bold bg-[rgb(var(--cyber-red-accent))] hover:bg-[rgb(var(--cyber-red-bright))] text-[rgb(var(--cyber-text))] border-2 border-[rgb(var(--cyber-red-bright))] neon-border transition-all duration-300 mb-6"
+        className="w-full h-14 text-lg font-bold bg-[rgb(var(--cyber-red-accent))] hover:bg-[rgb(var(--cyber-red-bright))] text-[rgb(var(--cyber-text))] border-2 border-[rgb(var(--cyber-red-bright))] neon-border transition-all duration-300 mb-6 rounded-xl"
       >
         СОЗДАТЬ АККАУНТ
       </Button>
@@ -237,7 +237,7 @@ const Index = () => {
       <div className="flex items-center gap-3 mb-8">
         <button
           onClick={() => setScreen('login')}
-          className="p-2 hover:bg-[rgb(var(--cyber-dark-2))] rounded transition-colors"
+          className="p-2 hover:bg-[rgb(var(--cyber-dark-2))] rounded-lg transition-colors"
         >
           <Icon name="ChevronLeft" className="w-6 h-6 text-[rgb(var(--cyber-red-accent))]" />
         </button>
@@ -245,7 +245,7 @@ const Index = () => {
       </div>
 
       <div className="text-center mb-8">
-        <div className="inline-flex p-4 bg-[rgb(var(--cyber-red-dark))] rounded-full mb-6 animate-glow-pulse">
+        <div className="inline-flex p-4 bg-[rgb(var(--cyber-red-dark))] rounded-2xl mb-6 animate-glow-pulse">
           <Icon name="ShieldCheck" className="w-12 h-12 text-[rgb(var(--cyber-red-bright))]" />
         </div>
         <p className="text-[rgb(var(--cyber-text-dim))] text-sm mb-2">
@@ -263,7 +263,7 @@ const Index = () => {
               <InputOTPSlot
                 key={i}
                 index={i}
-                className="w-12 h-14 text-2xl font-bold bg-[rgb(var(--cyber-dark-2))] border-2 border-[rgb(var(--cyber-line))] focus:border-[rgb(var(--cyber-red-accent))] text-[rgb(var(--cyber-text))] transition-all duration-300"
+                className="w-12 h-14 text-2xl font-bold bg-[rgb(var(--cyber-dark-2))] border-2 border-[rgb(var(--cyber-line))] focus:border-[rgb(var(--cyber-red-accent))] text-[rgb(var(--cyber-text))] transition-all duration-300 rounded-lg"
               />
             ))}
           </InputOTPGroup>
@@ -271,7 +271,7 @@ const Index = () => {
       </div>
 
       <Button
-        className="w-full h-14 text-lg font-bold bg-[rgb(var(--cyber-red-accent))] hover:bg-[rgb(var(--cyber-red-bright))] text-[rgb(var(--cyber-text))] border-2 border-[rgb(var(--cyber-red-bright))] neon-border transition-all duration-300 mb-4"
+        className="w-full h-14 text-lg font-bold bg-[rgb(var(--cyber-red-accent))] hover:bg-[rgb(var(--cyber-red-bright))] text-[rgb(var(--cyber-text))] border-2 border-[rgb(var(--cyber-red-bright))] neon-border transition-all duration-300 mb-4 rounded-xl"
       >
         ПОДТВЕРДИТЬ
       </Button>
@@ -287,7 +287,7 @@ const Index = () => {
       <div className="flex items-center gap-3 mb-8">
         <button
           onClick={() => setScreen('register')}
-          className="p-2 hover:bg-[rgb(var(--cyber-dark-2))] rounded transition-colors"
+          className="p-2 hover:bg-[rgb(var(--cyber-dark-2))] rounded-lg transition-colors"
         >
           <Icon name="ChevronLeft" className="w-6 h-6 text-[rgb(var(--cyber-red-accent))]" />
         </button>
@@ -295,7 +295,7 @@ const Index = () => {
       </div>
 
       <div className="text-center mb-8">
-        <div className="inline-flex p-4 bg-[rgb(var(--cyber-red-dark))] rounded-full mb-6 animate-glow-pulse">
+        <div className="inline-flex p-4 bg-[rgb(var(--cyber-red-dark))] rounded-2xl mb-6 animate-glow-pulse">
           <Icon name="Mail" className="w-12 h-12 text-[rgb(var(--cyber-red-bright))]" />
         </div>
         <p className="text-[rgb(var(--cyber-text-dim))] text-sm mb-2">
@@ -313,7 +313,7 @@ const Index = () => {
               <InputOTPSlot
                 key={i}
                 index={i}
-                className="w-12 h-14 text-2xl font-bold bg-[rgb(var(--cyber-dark-2))] border-2 border-[rgb(var(--cyber-line))] focus:border-[rgb(var(--cyber-red-accent))] text-[rgb(var(--cyber-text))] transition-all duration-300"
+                className="w-12 h-14 text-2xl font-bold bg-[rgb(var(--cyber-dark-2))] border-2 border-[rgb(var(--cyber-line))] focus:border-[rgb(var(--cyber-red-accent))] text-[rgb(var(--cyber-text))] transition-all duration-300 rounded-lg"
               />
             ))}
           </InputOTPGroup>
@@ -322,7 +322,7 @@ const Index = () => {
 
       <Button
         onClick={() => setScreen('login')}
-        className="w-full h-14 text-lg font-bold bg-[rgb(var(--cyber-red-accent))] hover:bg-[rgb(var(--cyber-red-bright))] text-[rgb(var(--cyber-text))] border-2 border-[rgb(var(--cyber-red-bright))] neon-border transition-all duration-300 mb-4"
+        className="w-full h-14 text-lg font-bold bg-[rgb(var(--cyber-red-accent))] hover:bg-[rgb(var(--cyber-red-bright))] text-[rgb(var(--cyber-text))] border-2 border-[rgb(var(--cyber-red-bright))] neon-border transition-all duration-300 mb-4 rounded-xl"
       >
         ЗАВЕРШИТЬ РЕГИСТРАЦИЮ
       </Button>
@@ -338,7 +338,7 @@ const Index = () => {
       <div className="flex items-center gap-3 mb-8">
         <button
           onClick={() => setScreen('login')}
-          className="p-2 hover:bg-[rgb(var(--cyber-dark-2))] rounded transition-colors"
+          className="p-2 hover:bg-[rgb(var(--cyber-dark-2))] rounded-lg transition-colors"
         >
           <Icon name="ChevronLeft" className="w-6 h-6 text-[rgb(var(--cyber-red-accent))]" />
         </button>
@@ -346,7 +346,7 @@ const Index = () => {
       </div>
 
       <div className="text-center mb-8">
-        <div className="inline-flex p-4 bg-[rgb(var(--cyber-red-dark))] rounded-full mb-6 animate-glow-pulse">
+        <div className="inline-flex p-4 bg-[rgb(var(--cyber-red-dark))] rounded-2xl mb-6 animate-glow-pulse">
           <Icon name="KeyRound" className="w-12 h-12 text-[rgb(var(--cyber-red-bright))]" />
         </div>
         <p className="text-[rgb(var(--cyber-text-dim))] text-sm">
@@ -363,7 +363,7 @@ const Index = () => {
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="h-12 bg-[rgb(var(--cyber-dark-2))] border-[rgb(var(--cyber-line))] focus:border-[rgb(var(--cyber-red-accent))] text-[rgb(var(--cyber-text))] transition-all duration-300"
+            className="h-12 bg-[rgb(var(--cyber-dark-2))] border-[rgb(var(--cyber-line))] focus:border-[rgb(var(--cyber-red-accent))] text-[rgb(var(--cyber-text))] transition-all duration-300 rounded-lg"
             placeholder="user@cyberauth.net"
           />
         </div>
@@ -371,7 +371,7 @@ const Index = () => {
 
       <Button
         onClick={() => setScreen('verify')}
-        className="w-full h-14 text-lg font-bold bg-[rgb(var(--cyber-red-accent))] hover:bg-[rgb(var(--cyber-red-bright))] text-[rgb(var(--cyber-text))] border-2 border-[rgb(var(--cyber-red-bright))] neon-border transition-all duration-300 mb-6"
+        className="w-full h-14 text-lg font-bold bg-[rgb(var(--cyber-red-accent))] hover:bg-[rgb(var(--cyber-red-bright))] text-[rgb(var(--cyber-text))] border-2 border-[rgb(var(--cyber-red-bright))] neon-border transition-all duration-300 mb-6 rounded-xl"
       >
         ОТПРАВИТЬ КОД
       </Button>
@@ -395,7 +395,7 @@ const Index = () => {
       </div>
 
       <div className="w-full max-w-md relative z-10">
-        <div className="bg-[rgb(var(--cyber-dark-1))] border-2 border-[rgb(var(--cyber-line))] p-8 backdrop-blur-sm">
+        <div className="bg-[rgb(var(--cyber-dark-1))] border-2 border-[rgb(var(--cyber-line))] p-8 backdrop-blur-sm rounded-2xl">
           {screen === 'intro' && <IntroScreen />}
           {screen === 'login' && <LoginScreen />}
           {screen === 'register' && <RegisterScreen />}
